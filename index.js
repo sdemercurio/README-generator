@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 
 const fs = require('fs');
 
-const userPrompt = () =>
+// const userPrompt = () =>
 inquirer.prompt([
         {
             type: 'input',
@@ -16,12 +16,12 @@ inquirer.prompt([
             name: 'description',
         },
         {
-            type: 'input',
+            type: 'editor',
             message: "Please enter installation instructions",
             name: 'install',
         },
         {
-            type: 'input',
+            type: 'editor',
             message: "Please enter your project’s features, interface, caveats, gotchas, tips, etc.",
             name: 'usage',
         },
