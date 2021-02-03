@@ -2,6 +2,11 @@ const inquirer = require('inquirer');
 
 const fs = require('fs');
 
+const util = require('util');
+
+const writeFileAsync = util.promisify(fs.writeFile);
+
+
 // const userPrompt = () =>
 inquirer.prompt([
         {
@@ -51,10 +56,34 @@ inquirer.prompt([
             message: "Please enter your email",
             name: 'email',
         },
-        {
-            type: 'input',
-            message: "Please provide instructions on how others may reach out to you",
-            name: 'contact',
-        },
 
-    ])
+    ]).then((response) => {
+        let doc = `
+        # ${response.title}
+
+        ## Table of Contents
+        *[Description]{#description}
+        *[Installation]{#installation}
+        *[Usage]{#usage}
+        *[License]{#license}
+        *[Contribution]{#contribution}
+        *[Tests]{#tests}
+        *[Question]{#questions}
+        *[Contact]{#contact}
+
+        ## Description
+        ${response.description}
+        ## Installation
+        ${response.install}
+        ## Usage
+        ${response.usage}
+        ## License
+        ${response.license}
+        ## Contributions
+        ${response.constribute}
+        ## Tests
+        ${response.tests}
+        ## Questions/nIf you have any questions, please feel free to contact me at/n/n##### Github: [github.com/${response.username}](https://github.com/${response.username})\n\n ##### Email: [${response.email}]
+        ${response.questions}
+        `
+    })
