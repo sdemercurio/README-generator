@@ -1,14 +1,15 @@
 {
-  "name": "static-site",
+  "name": "Homework8",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [],
+  "author": "Sarah DeMercurio",
+  "license": "MIT",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^7.3.3"
   }
 }
