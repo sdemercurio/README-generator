@@ -1,11 +1,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-
-// Ask if this is handled correctly
 const generateMarkdown = require('./generateMarkdown');
 const writeFileAsync = util.promisify(fs.writeFile);
-let file = 'README.md';
+let file = 'new_README.md';
 
 
 // TODO: Create an array of questions for user input
@@ -58,10 +56,7 @@ const userPrompt = () => {
             message: "Please enter your email",
             name: 'email',
         },
-        
-
     ]);
-
 }
 
 // // TODO: Create a function to initialize app
@@ -69,5 +64,3 @@ userPrompt()
 .then((data) => writeFileAsync(file, generateMarkdown(data)))
     .then(() => console.log('Success!'))
     .catch((err) => console.log(err));
-
-// // Function call to initialize app
