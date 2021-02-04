@@ -1,33 +1,66 @@
-# Awesome
-  ## Table of Contents:
-  * [Description]{#description}
-  * [Installation]{#installation}
-  * [Usage]{#usage}
-  * [License]{#license}
-  * [Contribution]{#contribution}
-  * [Tests]{#tests}
-  * [Question]{#questions}
-  
-  ## Description
-  It's awesome
-  
-  ## Installation
-  This is the best readme ever generated
+### Any Weather
 
-  
-  ## Usage
-  Blah blah blah
-  
-  ## License
-  MIT License
-  
-  ## Contributions
-  Rock it out
-  
-  ## Tests
-  No tests 
-  
-  ## Questions
-  If you have any questions, please feel free to contact me at
-  ##### Github: [github.com/sdemercurio](https://github.com/sdemercurio)
-  ##### Email: [sdemercuriomi@gmail.com]
+README.md generator.
+
+## Table of contents
+
+- [General info](#general-info)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Screenshots](#sscreenshots)
+- [Demo](#demo)
+- [Technologies](#technologies)
+- [Status](#status)
+
+## General info.
+
+README.md generator
+
+## User Story
+
+```md
+AS A developer
+I WANT a README generator
+SO THAT I can quickly create a professional README for a new project
+```
+
+## Acceptance Criteria
+
+```md
+GIVEN a command-line application that accepts user input
+WHEN I am prompted for information about my application repository
+THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+WHEN I enter my project title
+THEN this is displayed as the title of the README
+WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+WHEN I choose a license for my application from a list of options
+THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+WHEN I enter my GitHub username
+THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+WHEN I enter my email address
+THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+WHEN I click on the links in the Table of Contents
+THEN I am taken to the corresponding section of the README
+```
+## Screenshots
+![enter-app](assets/images/.PNG)
+![city-one](assets/images/.PNG)
+![city-two](assets/images/.PNG)
+
+
+## Demo
+![alt text](assets/images/readme.gif)
+
+
+## Technologies
+* node.js
+* Inquirer.js
+* Javascript
+
+## Status
+Project is: _in progress_
+
+Link to deployed page: https://sdemercurio.github.io/README-generator/
+```
+
