@@ -34,7 +34,7 @@ const userPrompt = () => {
             type: 'list',
             message: "Please choose a license relevant to your project",
             name: 'license',
-            choices: ['MIT License', 'GNU Lesser', 'Mozilla Public', 'Apache', 'The Unlicense'],
+            choices: ['MIT License', 'GNU GPL v3', 'Mozilla Public', 'Apache', 'Eclipse Public License', 'Common Development and Distribution License'],
         },
         {
             type: 'input',
@@ -63,4 +63,4 @@ const userPrompt = () => {
 userPrompt()
 .then((data) => writeFileAsync(file, generateMarkdown(data)))
     .then(() => console.log('Success!'))
-    .catch((err) => console.log(err));
+    .catch((err) => console.log("Oops! Looks like something went wrong"));
