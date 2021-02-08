@@ -1,14 +1,18 @@
 // // TODO: Create a function that returns a license badge based on which license is passed in
 // // If there is no license, return an empty string
-// function renderLicenseBadge(license) {}
+// function renderLicenseBadge(license) {
+//   return ? `https://img.shields.io/badge/License-${license}-yellow.svg` : "";
+//   }
 
 // // TODO: Create a function that returns the license link
 // // If there is no license, return an empty string
-// function renderLicenseLink(license) {}
+// function renderLicenseLink(data) {
+//   return `https://opensource.org/licenses/${license}`
+// // switch
+// //data.license
+// }
 
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
+
 
 // When the user chooses a license from the list, then a badge is added to the README.
 const badge = {
@@ -30,7 +34,7 @@ const badge = {
   'GNU GPL v3': {
     type: 'GNU GPL v3',
     image: 'https://img.shields.io/badge/License-GPL%20v3-blue.svg',
-    url: 'http://www.gnu.org/licenses/gpl-3.0',
+    url: 'https://opensource.org/licenses/GPL-3.0',
   },
   'Eclipse Public License': {
     type: 'Eclipse Public License',
@@ -79,8 +83,8 @@ function generateMarkdown(data) {
   
   ## Questions
   If you have any questions, please feel free to contact me at
-  ##### Github: [github.com/${data.GitHub}](https://github.com/${data.GitHub})
-  ##### Email: [${data.email}]
+  ### Github: [github.com/${data.GitHub}](https://github.com/${data.GitHub})
+  ### Email: [${data.email}]
 `;
 }
 

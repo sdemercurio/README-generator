@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-const generateMarkdown = require('./generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 const writeFileAsync = util.promisify(fs.writeFile);
 let file = 'new_README.md';
 
@@ -13,7 +13,6 @@ const userPrompt = () => {
             type: 'input',
             message: "Title of project?",
             name: 'title',
-            // validation: (value)=>{ if(value){return true} else {return 'Please enter a proper value to continue'}},
         },
         {
             type: 'input',
