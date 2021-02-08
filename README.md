@@ -1,6 +1,6 @@
-### README
+### README Generator
 
-README.md generator.
+A README generator app that allows develeopers to quickly and easily create a README file by using a command-line application to generate one. This will allow the project creator to devote more time to working on the project.
 
 ## Table of contents
 
@@ -14,19 +14,17 @@ README.md generator.
 
 ## General info.
 
-README.md generator
+This README generator is intialized when a user enters node index.js into the command line. THe user will then be propted to answer a series of questions regarding their application. Once all questions have been answered, the user's input will populate into the new_README.md file.
 
 ## User Story
-
-```md
+```
 AS A developer
 I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 ```
 
 ## Acceptance Criteria
-
-```md
+```
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
@@ -43,24 +41,20 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
+
 ## Screenshots
-![enter-app](assets/images/.PNG)
-![city-one](assets/images/.PNG)
-![city-two](assets/images/.PNG)
-
-
-## Demo
-![alt text](assets/images/readme.gif)
-
+![screenshot](assets/images/question-prompts.PNG)
 
 ## Technologies
 * node.js
-* Inquirer.js
+* Inquirer
 * Javascript
 
 ## Status
 Project is: _in progress_
+Always looking to improve.
 
-Link to deployed page: https://sdemercurio.github.io/README-generator/
+Link to repository: https://sdemercurio.github.io/README-generator/
+Link to walkthrough video: 
 ```
 
