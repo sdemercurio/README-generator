@@ -55,6 +55,5 @@ Project is: _in progress_
 Always looking to improve.
 
 Link to repository: https://sdemercurio.github.io/README-generator/
-Link to walkthrough video: 
-```
+Link to walkthrough video: https://youtu.be/D4PIeCDu7Sg
 
