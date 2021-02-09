@@ -1,6 +1,6 @@
 ### README Generator
 
-A README generator app that allows develeopers to quickly and easily create a README file by using a command-line application to generate one. This will allow the project creator to devote more time to working on the project.
+A README generator app that allows developers to quickly and easily create a README file by using a command-line application to generate one. This will allow the project creator to devote more time to working on the project.
 
 ## Table of contents
 
